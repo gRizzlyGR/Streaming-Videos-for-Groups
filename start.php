@@ -177,7 +177,7 @@ function group_owner_role_init($event, $object_type, $object) {
 	$role2=elgg_echo('roles:role:ADMIN_ROLE');
 	
 	if (strcasecmp($role1, $role2)!= 0) {
-		$user->makeAdmin();
+		//$user->makeAdmin();
 		roles_set_role(roles_get_role_by_name('group_owner'));		
 	}
 }
@@ -190,7 +190,7 @@ function group_owner_role_disable($event, $object_type, $object) {
 	$role2=elgg_echo('roles:role:ADMIN_ROLE');
 	
 	if (strcasecmp($role1, $role2)!= 0) {
-		$user->removeAdmin();
+		//$user->removeAdmin();
 		roles_set_role(roles_get_role_by_name(elgg_echo('roles:role:DEFAULT_ROLE')));	
 	}	
 }
