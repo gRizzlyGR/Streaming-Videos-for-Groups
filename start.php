@@ -22,7 +22,7 @@ function svg_init() {
 		
 	//Roles handler
 	elgg_register_event_handler('create', 'group', 'group_owner_role_init');
-	elgg_register_event_handler('delete', 'group', 'group_owner_role_disable');
+	//elgg_register_event_handler('delete', 'group', 'group_owner_role_disable');
 	
 	//Group videos enabler
 	add_group_tool_option('video', elgg_echo('svg:enable'), true);
